@@ -58,8 +58,11 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+
     display: none;
 
+
+    
 }
 .side-bar{
     width: 100%;
@@ -83,8 +86,14 @@
 .side-close{
 
 /* padding: 0px 0px 0px 400px; */
-position: relative;
-left: 180px;
+/* position: relative;
+left: 180px; */
+display: flex;
+width: 100%;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 10px;
+
   
 
 }
@@ -149,7 +158,7 @@ left: 180px;
         font-size: 15px;
     }
     .nav-bar{
-        padding: 50px;
+        padding: 40px;
 
     }
     
@@ -199,13 +208,19 @@ left: 180px;
    
 }
 
-@media(max-width:550px){
+@media(max-width:600px){
 
   .nav-links{
     display: none;
   }
+  .nav-bar{
+    padding: 20px;
+  }
   .humberger{
     display: flex;
+    padding: 0px 0px;
+    
+    
   }
  
     

@@ -18,14 +18,7 @@
 #m{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body{
-    background-image: url(./Assets/flight4.jpg);
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* display: none; */
-    
-}
+
 
 .nav-links{
     display: flex;
