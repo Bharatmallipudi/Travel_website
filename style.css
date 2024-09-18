@@ -16,6 +16,21 @@
     background-color: #ffff;
     /* position: fixed;     */
 }
+.logo-sub{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+}
+.logo-sub h1{
+    color: coral;
+    /* font-style: italic; */
+}
+.logo-sub p{
+    /* color: coral; */
+    font-style: italic;
+}
 
 .nav-logo{
     display: flex;
@@ -24,10 +39,15 @@
     gap: 50px;
 
 }
+#s:hover{
+    color: coral;
+    cursor:pointer;
+}
 .nav-bar input{
-    width: 300px;
-    padding: 10px 3px;
+    width: 250px;
+    padding: 10px 10px;
     border: none;
+    border-radius: 12px;
     outline: none;
 
 
@@ -42,9 +62,9 @@
 
 }
 .side-bar{
-    width: 250px;
+    width: 100%;
     position: absolute;
-    transform:translateX(-250px);
+    transform:translateX(-100%);
     height: 90vh;
     background-color:  orangered;
     display: flex;
@@ -62,7 +82,9 @@
 
 .side-close{
 
-padding: 0px 0px 0px 220px;
+/* padding: 0px 0px 0px 400px; */
+position: relative;
+left: 180px;
   
 
 }
@@ -95,7 +117,20 @@ padding: 0px 0px 0px 220px;
     align-items: center;
     gap: 50px;
 }
-
+#button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 3px solid coral;
+    
+}
+.sign-close:hover{
+    cursor: pointer;
+    color: coral;
+}
+.nav-logo input:hover{
+    border: 3px solid coral;
+}
 .nav-links button{
     padding: 10px 20px;
     background-color: #EB662B;
@@ -113,27 +148,26 @@ padding: 0px 0px 0px 220px;
         gap: 30px;
         font-size: 15px;
     }
-    
+    .nav-bar{
+        padding: 50px;
 
-   
-}
-
-@media(max-width:1250px){
-
-    .nav-links{
-        gap: 30px;
-        font-size: 15px;
     }
     
 
    
 }
 
+
+
 @media(max-width:1150px){
 
     .nav-links{
         gap: 20px;
         font-size: 13px;
+    }
+    .nav-links button{
+        font-size: 15px
+
     }
     
     .nav-bar{
@@ -192,7 +226,7 @@ padding: 0px 0px 0px 220px;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-image: url(./Assets/imagebackground-img.png);
+    background-image: url(./Assets/pexels-pixabay-248771\ \(1\).jpg);
     background-size: cover;
 }
 
@@ -209,10 +243,289 @@ padding: 0px 0px 0px 220px;
 
 }
 
-.nav-box{
+.login{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 30px;
+    flex-direction: column;
+    padding: 50px 50px 100px 50px;
+    border-radius: 10px;
+    display: none;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+   
+}
+
+.close{
+    position: absolute;
+}
+.login-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.login-close{
+    position: absolute;
+    left: 900px;
+    bottom: 500px;
+}
+.login-close:hover{
+    cursor: pointer;
+    color: coral;
+}
+/* .login-bg{
+    width: 100%;
+    background-blend-mode: color;
+    position: absolute;
+    display: flex;
+    justify-tracks: center;
+    align-items: center;
+
+} */
+
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid red; */
+
+}
+.login-msg{
+    position:absolute;
+    background-color: #E7E6E6;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    background-color: lightgreen;
+    
+    
+    
+}
+.login-sub{
+    padding: 30px 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.login-msg img{
+    width: 50px;
+   
+    
+}
+.login-page input{
+    outline: none;
+    padding: 15px 150px 15px 20px;
+    border-radius: 5px;
+    /* border: none; */
+    outline: none;
+    border: 1px solid black;
+
+    
+    /* background-color: #E7E6E6; */
+}
+
+.login-page input:hover{
+    border: 2px solid coral;
+}
+.remainder{
+    display: flex;
+    justify-content: center;
+    align-items: centere;
+    gap: 10px;
+
+}
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+#pass:hover{
+    
+    color: coral;
+}
+
+.login-button button{
+    padding: 15px 140px;
+    border: none;
+    outline: none;
+    background-color: coral ;
+    border-radius: 10px;
+    color: white;
+
+}
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-img img{
+    width: 470px;
+    border-radius: 10px;
+}
+.close{
+   position: relative;
+   left: 400px;
+}
+
+/* ///////////sign-up//////////// */
+
+    .sign-up{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;  
+        display: none; 
+        background-color: white;
+        color: black;
+        /* border-radius: 10px; */
+        padding: 30px 50px;
+    }
+
+    @media(max-width:450px){
+        .sign-up{
+            padding: 20px 30px;
+        }
+        .sign-text h2{
+            font-size: 18px;
+        }
+        .sign-text p{
+            font-size: 12px;
+        }
+
+        .sign-row input{
+            width: 200px;
+    
+        }
+    }
+
+    .sign-text p{
+        width: 300px;
+    }
+    .sign-close{
+        position: relative;
+        left: 150px;
+    }
+    .sign-row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        flex-direction: column;
+        gap: 20px;
+        
+        /* border: 1px solid red; */
+    }
+    .sign-row button{
+        padding: 20px 0px;
+        width: 100%;
+        background-color: coral;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .sign-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+
+    }
+    .sign-row label{
+        width: 100%;
+        text-align: start;
+        /* border: 1px solid red; */
+    }
+
+    #p{
+        width: 300px;
+        text-align: center;
+        font-size: 12px;
+
+    }
+    .sign-row input:hover{
+        border: 3px solid coral;
+    }
+    .sign-row input{
+        width:  300px;
+        padding: 10px 10px;
+        /* border: 2px solid coral; */
+        outline: none;
+
+
+    }
+    .sign-row button:hover{
+        cursor: pointer;
+        
+    }
+    .success-img{
+        position: absolute;
+        padding: 100px 100px;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        background-color: #fffdfd;
+
+
+    }
+    .success-img img{
+        width: 100px;
+        
+    }
+
+
+
+
+
+.nav-box1{
     width: 50px;
     height: 50px;
     /* background-color: #b43737; */
+    background-image: url(./Assets/pexels-olly-3769138.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.nav-box2{
+    width: 50px;
+    height: 50px;
+    /* background-color: #b43737; */
+    background-image: url(./Assets/pexels-pixabay-248771\ \(1\).jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.nav-box3{
+    width: 50px;
+    height: 50px;
+    /* background-color: #b43737; */
+    background-image: url(./Assets/pexels-robert-stokoe-105922-1105840.jpg);
+    background-size: cover;
     border-radius: 10px;
 }
 .nav-text{
@@ -229,10 +542,17 @@ padding: 0px 0px 0px 220px;
     align-items: center;
     gap: 50px;
     /* color: #ffff; */
-    padding: 10px 60px;
-    background-color: #E7E6E6;
+    padding: 10px 50px;
+    background-color: #ffff;
     border-radius: 10px;
+    /* border: 2px solid coral; */
+    /* background-color: transparent; */
+    
 }
+/* #color{
+    color: black;
+    font-size: large;
+} */
 
 .joy-nav button{
     padding: 15px 15px 15px 30px ;
@@ -243,18 +563,26 @@ padding: 0px 0px 0px 220px;
     border-radius: 10px;
     font-size: 10px;
 }
+.joy-nav input:hover{
+    border: 2px solid coral;
+    border-radius: 5px;
+}
 
 .nav-text input{
     border: none;
     outline: none;
     padding: 5px 0px 5px 5px;
     background-color: #E7E6E6;
+    
 
 }
 
 @media(max-width:1250px){
     .joy-cards h2{
         font-size: 15px;
+    }
+    .joy{
+        background-size: cover;
     }
 
     .joy-nav{
@@ -287,6 +615,107 @@ padding: 0px 0px 0px 220px;
         text-align: center;
         
     }
+
+    .nav-box1{
+        display: none;
+
+    }
+    .nav-box2{
+        display: none;
+    }
+    .nav-box3{
+        display: none;
+    }
+
+}
+
+@media(max-width:900px){
+    .login{
+      padding: 50px 30px 50px 30px;
+    }
+    .login img{
+        width: 400px;
+    }
+    .login #e{
+        /* padding: 20px 10px 20px 10px; */
+        width: 320px;
+
+    }
+    .login #p{
+        /* padding: 20px 10px 20px 10px; */
+        width: 320px;
+
+    }
+    .login h1{
+        font-size: 20px;
+    }
+    .login-close{
+        left: 260px;
+        top: -2px;
+        
+    }
+
+
+}
+
+@media(max-width:800px){
+    .login{
+      padding: 40px 30px 40px 25px;
+     
+    }
+    .login-row{
+        flex-direction:column-reverse;
+    }
+    .login img{
+        width: 250px;
+    }
+    .login #e{
+        /* padding: 20px 10px 20px 10px; */
+        width: 300px;
+
+    }
+    .login #p{
+        /* padding: 20px 10px 20px 10px; */
+        width: 300px;
+
+    }
+    .login h1{
+        font-size: 18px;
+    }
+    .password{
+        gap: 50px;
+    }
+    .login-button button{
+        padding: 14px 110px;
+    }
+
+
+}
+
+@media(max-width:800px){
+    .login{
+      padding: 30px 20px 30px 20px;
+     
+    }
+  
+    .login img{
+        width: 160px;
+    }
+    .login #e{
+        /* padding: 20px 10px 20px 10px; */
+        width: 250px;
+
+    }
+    .login #p{
+        /* padding: 20px 10px 20px 10px; */
+        width: 250px;
+
+    }
+    .login h1{
+        font-size: 18px;
+    }
+     
+    
 
 }
 
@@ -445,6 +874,8 @@ padding: 0px 0px 0px 220px;
   flex-direction: column;
   gap: 50px;
 
+ 
+
 }
 .trend-cards{
     display: flex;
@@ -482,13 +913,26 @@ padding: 0px 0px 0px 220px;
     align-items: center;
     gap: 30px;
 }
-
+.tour-display{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
 .trend-text{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+
+    
+}
+#see:hover{
+    cursor: pointer;
 
     
 }
@@ -592,6 +1036,10 @@ padding: 0px 0px 0px 220px;
    
    
 }
+#a{
+    color: white;
+    text-decoration: none;
+}
 
 /* grab */
 
@@ -628,11 +1076,16 @@ padding: 0px 0px 0px 220px;
     border: none;
     outline: none;
     color: #ffff;
+    
     border-radius: 10px;
+}
+#grab-btn a{
+    text-decoration: none;
+    color: #ffff;
 }
 
 .grab-img{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -641,45 +1094,68 @@ padding: 0px 0px 0px 220px;
 .grab-img img{
     width: 600px;
     border-radius: 10px;
+
 }
 
+.grab1{
+    background-color: coral;
+}
+.gtext{
+    display: none;
+}
+
+.grab2-img img{
+    width: 800px;
+    position: relative; 
+    right: 250px; 
+    
+    
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px 5px coral;
+
+}
+
+
+
 @media(max-width:1200px){
+
+    .grab{
+        flex-direction: column-reverse;
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px; */
+    }
+    .grab-text{
+        text-align: center;
+        align-items: center;
+    }
+
     .grab-text h1{
         font-size: 30px;
     }
     .grab-img img{
         width: 500px;
 
+    
     }
+  
 }
 
-@media(max-width:900px){
-    .grab{
-        gap: 0px;
-    }
-    .grab-text h1{
-        font-size: 30px;
-    }
+@media(max-width:800px){
+  
     .grab-img img{
-        width: 300px;
-
+        width: 400px;
     }
-
     .grab-text h1{
-        font-size: 20px;
+        font-size: 22px;
     }
    
 }
 
 @media(max-width:550px){
     
-    .grab{
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-    }
+ 
     .grab-text{
         align-items: center;
         width: 300px;
@@ -1159,8 +1635,7 @@ padding: 0px 0px 0px 220px;
 
 .footer-contact{
     display: flex;
-    align-items:
-    center;
+    align-items:flex-start;
     justify-content: center;
     gap: 100px;
    

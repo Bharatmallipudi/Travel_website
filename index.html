@@ -17,7 +17,11 @@
 
   <div class="nav-bar">
     <div class="nav-logo">
-      <img src="./Assets/Link → logo-1.svgmain-logo.png" alt="" />
+      <!-- <img src="./Assets/Link → logo-1.svgmain-logo.png" alt="" /> -->
+       <div class="logo-sub">
+        <h1>𝓑𝓱𝓪𝓻𝓪𝓽</h1>
+       <p>International travels</p>
+       </div>
       <input type="text" placeholder="Search destination or activites">
     </div>
 
@@ -25,9 +29,9 @@
       <p>Destination</p>
       <p>Activites</p>
       <p>USD</p>
-      <p>Sign Up</p>
+      <p id="s">Sign Up</p>
 
-      <button>Log in</button>
+      <button id="button">Log in</button>
     </div>
 
        <div class="humberger">
@@ -46,17 +50,20 @@
     <div class="side-links">
     <a href="#">Destination</a>
     <a href="#">activities</a>
-    <a href="#">USD</a>
     <a href="#">Sign Up</a>
+    <a href="#" id="mobile_login">Login</a>
     </div>
   </div>
+
+
+   
 
   <div class="joy">
 
    
     <div class="joy-text">
       <h1>Your world of joy</h1>
-      <p>
+      <p id="color">
         From local escapes to far-flung adventures, find what makes you happy
         anytime, anywhere
       </p>
@@ -66,18 +73,18 @@
       <div class="joy-cards">
         <div class="border"></div>
         <div class="nav-text">
-          <div class="nav-box">
+          <div class="nav-box1">
 
           </div>
           <h2>When</h2>
-          <input type="text" placeholder="Search Destinations">
+          <input   type="text" placeholder="Search Destinations">
         </div>
       </div>
 
       <div class="joy-cards">
         <div class="border"></div>
         <div class="nav-text">
-          <div class="nav-box">
+          <div class="nav-box2">
 
           </div>
           <h2>When</h2>
@@ -88,7 +95,7 @@
       <div class="joy-cards">
         <div class="border"></div>
         <div class="nav-text">
-          <div class="nav-box">
+          <div class="nav-box3">
 
           </div>
           <h2>When</h2>
@@ -98,6 +105,87 @@
 
       <button>Search</button>
     </div>
+        
+     <div class="success-img">
+     
+      <img src="./Assets/icons8-success.gif">
+      <h2>Register Sucessfully</h2>
+     </div>
+    <div class="sign-up">
+          
+      <div class="sign-close">
+        <h2>X</h2>
+      </div>
+    
+      <div class="sign-text">
+        <h2>Create an aacoount</h2>
+        <p>One account for everthing intuit,including Mint, Learn More</p>
+      </div>
+
+      <div class="sign-row">
+      
+        <label>Email</label> <input type="emial" placeholder="Enter your Email" class="input1">
+        <label>Phone</label>  <input type="tel" placeholder="Enter your phone number" class="input2">
+        <label>Password</label> <input type="Password" placeholder="assword" class="input3">
+        <button class="sign-btn">Create Account</button>
+
+      </div>
+
+      <p id="p">By select create an account you agree to our terms and have read and acknowledge our Global privacy Statement</p> 
+      
+
+      <div class="sign-footer">
+        
+      </div>
+     </div>
+
+
+
+     <div class="login-msg">
+      <div class="login-sub">
+        <img src="./Assets/icon-success-11.jpg" alt="">
+      <p id="r1">bharat</p>
+      <p id="r2">chandra</p>
+      <h2>Successfully Login</h2>
+      </div>
+      
+      
+     </div>
+      
+    <div class="login-bg">
+   
+    </div>
+
+    <div class="login">
+       
+      <div class="login-close">
+       <h2>X</h2>
+      </div>
+     <h1>Login</h1> 
+     
+     <div class="login-row">
+       <div class="login-page">
+         <label>UserName or Email</label> <input id="e"  type="email" placeholder="Email" class="login-input1">
+         <div class="password">
+           <label>Password</label> <label id="pass">Forgot Password?</label>
+         </div>
+          <input  id="p" type="password" placeholder="Password" class="login-input2">
+         <div class="remainder">
+           <input type="checkbox"> <label>Reminder me</label>
+         </div>
+         <div class="login-button">
+           <button class="login-btn"><a id="a" href="#">Login</a></button>
+         </div>
+       </div>
+       
+       <div class="login-img">
+         <img src="./Assets/pexels-olly-3769138.jpg" alt="">
+       </div>
+     </div>
+   </div>
+
+
+    
   </div>
 
   <div class="tourz">
@@ -251,7 +339,7 @@
   <div class="tours">
     <div class="popular-nav">
       <h1>Find Popular Tours</h1>
-      <p>See all</p>
+      <p id="see">See all</p>
     </div>
 
     <div class="tours-row1">
@@ -264,6 +352,8 @@
 
 
             <div class="card-footer">
+             
+
               <div class="card-footer-para">
                 <p>4.8  (243)</p>
               </div>
@@ -461,7 +551,229 @@
 
     </div>
 
+
+
+  <div class="tour-display">
+    <div class="tours-row1">
+     
+
+
+      <div class="tour-cards">
+        <img src="./Assets/div.tourCard__imagetour2.png" alt="">
+        <div class="tour-text">
+          <p>New York,USA</p>
+          <p>Molokini and Turtle Town
+            Snorkeling Adventure Aboard</p>
+
+            <div class="card-footer">
+              <div class="card-footer-para">
+                <p>4.8  (243)</p>
+              </div>
+    
+              <div class="card-footer1">
+    
+                <p>4 days</p>
+                <p>From $189.25</p>
+              </div>
+    
+            </div>
+        </div>
+
+
+      </div>
+
+      <div class="tour-cards">
+        <img src="./Assets/imagetour1.png" alt="">
+        <div class="tour-text">
+          <p>Paris, France</p>
+          <p>Centipede Tour - Guided Arizona
+            Desert Tour by ATV</p>
+
+
+            <div class="card-footer">
+             
+
+              <div class="card-footer-para">
+                <p>4.8  (243)</p>
+              </div>
+    
+              <div class="card-footer1">
+    
+                <p>4 days</p>
+                <p>From $189.25</p>
+              </div>
+    
+            </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+      <div class="tour-cards">
+        <img src="./Assets/imagetour4.png" alt="">
+        <div class="tour-text">
+          <p>New York, USA</p>
+          <p>All Inclusive Ultimate Circle Island
+            Day Tour with Lunch</p>
+
+
+
+            <div class="card-footer">
+              <div class="card-footer-para">
+                <p>4.8  (243)</p>
+              </div>
+    
+              <div class="card-footer1">
+    
+                <p>4 days</p>
+                <p>From $189.25</p>
+              </div>
+    
+            </div>
+        </div>
+
+      </div>
+
+      
+      <div class="tour-cards">
+        <img src="./Assets/imagetour3.png" alt="">
+        <div class="tour-text">
+          <p>London, UK</p>
+          <p>Westminster Walking Tour &
+            Westminster Abbey Entry</p>
+
+
+            <div class="card-footer">
+              <div class="card-footer-para">
+                <p>4.8  (243)</p>
+              </div>
+    
+              <div class="card-footer1">
+    
+                <p>4 days</p>
+                <p>From $189.25</p>
+              </div>
+    
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="tours-row2">
+    
+
+
+      <div class="tour-cards">
+        <img src="./Assets/imagetour6.png" alt="">
+        <div class="tour-text">
+          <p>New York, USA</p>
+          <p>Clear Kayak Tour of Shell Key
+            Preserve</p>
+
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-para">
+            <p>4.8  (243)</p>
+          </div>
+
+          <div class="card-footer1">
+
+            <p>4 days</p>
+            <p>From $189.25</p>
+          </div>
+
+        </div>
+      </div>
+
+    
+
+
+
+      <div class="tour-cards">
+        <img src="./Assets/imagetour7.png" alt="">
+        <div class="tour-text">
+          <p>London, UK</p>
+          <p>History and Hauntings of Salem
+            Guided Walking Tour</p>
+
+        </div>
+
+        <div class="card-footer">
+          <div class="card-footer-para">
+            <p>4.8  (243)</p>
+          </div>
+
+          <div class="card-footer1">
+
+            <p>4 days</p>
+            <p>From $189.25</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="tour-cards">
+        <img src="./Assets/imagetour8.png" alt="">
+        <div class="tour-text">
+          <p>New York, USA</p>
+          <p>Mauna Kea Summit Sunset and
+            Stars Free Astro
+            </p>
+
+        </div>
+
+        <div class="card-footer">
+          <div class="card-footer-para">
+            <p>4.8  (243)</p>
+          </div>
+
+          <div class="card-footer1">
+
+            <p>4 days</p>
+            <p>From $189.25</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="tour-cards">
+        <img src="./Assets/imagetour5.png" alt="">
+        <div class="tour-text">
+          <p>Paris, France</p>
+          <p>Space Center Houston Admission
+            Ticket</p>
+
+        </div>
+
+        <div class="card-footer">
+          <div class="card-footer-para">
+            <p>4.8  (243)</p>
+          </div>
+
+          <div class="card-footer1">
+
+            <p>4 days</p>
+            <p>From $189.25</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
   </div>
+
+  </div>
+
 
   <div class="grab">
 
@@ -472,7 +784,7 @@
 
       <p>Limited time offer, don't miss the opportunity</p>
 
-      <button>Book Now</button>
+      <button id="grab-btn"><a href="./index1.html">Book Now</a></button>
     </div>
 
     <div class="grab-img">
