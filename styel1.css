@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(./Assets/flight4.jpg);
+    background-size: cover;
+}
+
 .nav-bar{
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     /* background-color: brown; */
     display: flex;
     justify-content: space-between;
@@ -34,14 +39,13 @@
 
 .main-container{
     width: 100%;
-    height: 90vh;   
+    /* height: 90vh;    */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 20px 100px;
-    background-image: url(./Assets/flight4.jpg);
-    background-size: cover;
+    
     /* display: none; */
     /* border: 2px solid red; */
    
