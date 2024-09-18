@@ -36,7 +36,7 @@ button.addEventListener("click", () => {
 mobilelogin.addEventListener("click", () => {
   login.style.display = "flex";
   successimg.style.display = "none";
-  sidebar.style.display="none";
+  sidebar.style.transform = "translateX(-100%)";
 });
 
 btn.addEventListener("click", () => {
